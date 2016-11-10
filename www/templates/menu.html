@@ -1,0 +1,40 @@
+<ion-side-menus>
+
+	<ion-side-menu-content  >
+		<ion-nav-view></ion-nav-view>
+	</ion-side-menu-content>
+
+	<ion-side-menu side="left">
+		<ion-header-bar class="bar-assertive">
+			<h1 class="title">Menu</h1>
+		</ion-header-bar>
+
+		<ion-content>
+			<ion-list >
+				<ion-item menu-close href="#/main/contentRecent" value ="home" ng-model = "slugName" ng-init="slugName='home'">
+					<span >Home</span>
+				</ion-item>
+				<ion-item menu-close href="#/main/contentOfCat/{{slugName}}" value='priestcorner' ng-init="slugName='priestcorner'" ng-model = "slugName">
+					<span >Priest Corner</span>
+				</ion-item>
+				<ion-item menu-close href="#/main/contentOfCat/{{slugName}}" value ="reflection" ng-init="slugName='reflection'" ng-model = "slugName"> 
+					<span >Reflection</span>
+				</ion-item>
+				<ion-item menu-close href="#/main/contentOfCat/{{slugName}}" value="saintoftheday" ng-init="slugName='saintoftheday'" ng-model = "slugName">
+					<span >Saint Of the Day</span>
+				</ion-item>
+				<ion-item menu-close href="#/main/contentOfCat/{{slugName}}" value ="youthcorner" ng-init="slugName='youthcorner'" ng-model = "slugName">
+					<span >Youth Corner</span>
+				</ion-item>
+				<ion-item menu-close href="#/main/contentOfCat/{{slugName}}" value ="announcements" ng-init="slugName='announcements'" 
+				ng-model = "slugName">
+					<span >Announcements</span>
+				</ion-item>
+				<!-- <ion-item menu-close href="http://stjosephtheworker-com8.rhcloud.com/api/get_page/?slug=about-us" Value ="About Us" ng-init="slugname='aboutus'" ng-model = "slugName">
+					<span >About Us</span>
+				</ion-item> -->
+			</ion-list>
+		</ion-content>
+		/
+	</ion-side-menu>	
+</ion-side-menus>
